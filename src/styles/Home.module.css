@@ -3,6 +3,7 @@
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  font-size: 2rem;
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
@@ -176,6 +177,10 @@
   .center::before {
     transform: none;
     height: 300px;
+  }
+
+  .typewriter p{
+    font-size: .9rem;
   }
 
   .description {
