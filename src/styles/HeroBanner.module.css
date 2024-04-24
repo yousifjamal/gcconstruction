@@ -1,0 +1,118 @@
+.main {
+    display: flex;
+    justify-content: flex-start;
+    width: 95vw;
+    height: 70vh;
+    background-image: radial-gradient( farthest-side at 0% 100%, rgba(255, 255, 255, 0.01), #206ECA);
+    border-radius: 2rem;
+    border: grey;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.main h1 {
+    display: flex;
+    padding-left: 4vw;
+    font-size: 120px;
+    color: White;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
+}
+.linearwipe {
+    text-align: center;
+    background: linear-gradient(to right, #c9c9c9 20%, rgb(228, 227, 227) 40%, rgb(255, 255, 255) 60%, #c9c9c9 80%);;
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    fill: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 3s linear infinite;
+    
+  }
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.main h2 {
+    display: flex;
+    padding-left: 4vw;
+    margin-top: 8vh;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.main h3 {
+    display: flex;
+    padding-left: 4vw;
+    padding-top: 2vh;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.main Button{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 4vw;
+    margin-top: 6vh;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.rightDiv{
+    margin-top: 3vh;
+    margin-left: 8vw;
+}
+
+.images{
+    
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+.imageListItems {
+    margin: 0;
+}
+
+
+@media (max-width: 700px) {
+.main {
+    width: 95vw;
+    height: 40vh;
+}
+
+.main h1{
+    font-size: 35px
+}
+
+.main h2{
+    font-size: 15px;
+}
+
+.main h3{
+    font-size: 8px;
+}
+
+.main Button{
+    margin-top: 8vh;
+    font-size: 10px;
+}
+
+.leftDiv {
+    margin-top: 4vh;
+}
+
+.rightDiv{
+    margin-top: 1vh;
+    margin-left: 5vw;
+}
+.images{
+    height: 30vh;
+    width: 28vw;
+}
+}
