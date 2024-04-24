@@ -18,6 +18,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <Navbar/>
         <HeroBanner/>
+        <div className={styles.typewriter}><p>Remainder of Website under construction</p></div>
         <div className={styles.scrolltest}>
 
         </div>
