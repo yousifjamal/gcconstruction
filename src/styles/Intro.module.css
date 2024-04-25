@@ -1,0 +1,60 @@
+.main {
+    margin-top: 21vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h1{
+    color: #206ECA;
+    text-shadow: 0 0 90px rgba(68, 0, 255, 0.663);
+    font-size: 55px;
+    margin-left: 7vw;
+}
+
+.cardcontainer{
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card{
+    border-radius: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    width: 35vw;
+    height: 45vh;
+    text-align: center;
+    background-image: radial-gradient( farthest-corner at 100% 50%, rgba(255, 255, 255, 0.01), #206ECA);
+}
+
+.arrowcircle{
+    fill: #BCDB01;
+    height: 20vh;
+    width: 20vw;
+}
+
+@media (max-width: 700px) {
+.main{
+    margin-top: 10vh;
+    width: 95vw;
+}
+.main h1 {
+    text-align: center;
+    margin-left: 0;
+    font-size: 40px;
+} 
+
+.cardcontainer {
+    flex-direction: column;
+}
+.card {
+    width: 95vw;
+}
+.card h2{
+    font-size: 40px;
+}
+.arrowcircle {
+    rotate: 90deg;
+}
+}
