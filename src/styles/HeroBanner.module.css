@@ -1,7 +1,7 @@
 .main {
     display: flex;
     justify-content: flex-start;
-    width: 95vw;
+    width: 98vw;
     height: 70vh;
     background-image: radial-gradient( farthest-side at 0% 100%, rgba(255, 255, 255, 0.01), #206ECA);
     border-radius: 2rem;
@@ -72,7 +72,7 @@
     
     overflow: hidden;
     border-radius: 1rem;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .imageListItems {
@@ -82,37 +82,56 @@
 
 @media (max-width: 700px) {
 .main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     width: 95vw;
-    height: 40vh;
+    height: 80vh;
 }
 
 .main h1{
-    font-size: 35px
+    margin-left: 4vw;
+    font-size: 50px;
+    text-align: center;
+}
+.main .push {
+    margin-left: 9vw;
 }
 
 .main h2{
-    font-size: 15px;
+    margin-left: 4vw;
+    margin-top: 7vh;
+    font-size: 20px;
 }
 
 .main h3{
-    font-size: 8px;
+    margin-left: 4vw;
+    font-size: 11px;
 }
 
 .main Button{
-    margin-top: 8vh;
-    font-size: 10px;
+    margin-left: 18vw;
+    margin-top: 4vh;
+    font-size: 15px;
 }
 
 .leftDiv {
-    margin-top: 4vh;
+    margin-top: 2vh;
+    width: 80vw;
 }
-
+.MuiImageList-root{
+    column-count: 3 !important;
+}
 .rightDiv{
-    margin-top: 1vh;
+    margin-top: -2vh;
     margin-left: 5vw;
 }
 .images{
-    height: 30vh;
-    width: 28vw;
+    overflow: scroll;
+    scrollbar-color: white;
+    height: 33vh;
+    width: 85vw;
+    margin-right: 5vw;
 }
 }
