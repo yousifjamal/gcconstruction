@@ -36,6 +36,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background: linear-gradient(to bottom, #DBDFE0, rgb(160, 160, 160));
 }
 
 .description {
