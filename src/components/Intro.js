@@ -24,7 +24,7 @@ export default function Intro(){
                 <Card className={styles.card}>
                     <CardMedia ><Image src="/SkyBlueprint.png" width={300} height={300} style={{width: '100%', height: '300px'}} /></CardMedia>
                     <CardContent>
-                        <Typography color={"rgba(255, 255, 255, 0.75)"} variant="h2">
+                        <Typography color={"rgba(255, 255, 255, 0.75)"} paddingBottom={"1rem"} variant="h2">
                             From Blueprint
                         </Typography>
                     </CardContent>
@@ -33,7 +33,7 @@ export default function Intro(){
                 <Card className={styles.card}>
                     <CardMedia><Image src="/ActiveConstructionSkyDental.png" width={300} height={300} style={{width: '100%', height: '300px'}} /></CardMedia>
                     <CardContent>
-                        <Typography color={"rgba(255, 255, 255, 0.75)"} variant="h2">
+                        <Typography color={"rgba(255, 255, 255, 0.75)"} paddingBottom={"1rem"} variant="h2">
                             To Reality
                         </Typography>
                     </CardContent>
