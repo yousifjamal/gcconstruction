@@ -22,7 +22,7 @@ export default function Intro(){
 
             <div data-aos="fade-up" className={styles.cardcontainer}>
                 <Card className={styles.card}>
-                    <CardMedia component={Image} height={300} image="./SkyBlueprint.png"/>
+                    <CardMedia ><Image src="/SkyBlueprint.png" width={300} height={300} style={{width: '100%', height: '300px'}} /></CardMedia>
                     <CardContent>
                         <Typography color={"rgba(255, 255, 255, 0.75)"} variant="h2">
                             From Blueprint
@@ -31,7 +31,7 @@ export default function Intro(){
                 </Card>
                 <ForwardIcon  className={styles.arrowcircle}/>
                 <Card className={styles.card}>
-                    <CardMedia component={Image} height={300} image="./ActiveConstructionSkyDental.png"/>
+                    <CardMedia><Image src="/ActiveConstructionSkyDental.png" width={300} height={300} style={{width: '100%', height: '300px'}} /></CardMedia>
                     <CardContent>
                         <Typography color={"rgba(255, 255, 255, 0.75)"} variant="h2">
                             To Reality
