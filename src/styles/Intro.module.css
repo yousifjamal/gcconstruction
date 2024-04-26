@@ -7,8 +7,8 @@
 .main h1{
     color: #206ECA;
     text-shadow: 0 0 90px rgba(68, 0, 255, 0.663);
-    font-size: 55px;
-    margin-left: 7vw;
+    font-size: 45px;
+    margin-left: 4vw;
 }
 
 .cardcontainer{
@@ -49,7 +49,10 @@
     flex-direction: column;
 }
 .card {
+    align-items: center;
+    justify-content: center;
     width: 95vw;
+    height: 50vh;
 }
 .card h2{
     font-size: 40px;

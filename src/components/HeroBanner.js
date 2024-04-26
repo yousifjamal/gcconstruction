@@ -21,10 +21,10 @@ export default function HeroBanner(){
         <>
         <div className={styles.main}>
             <div className={styles.leftDiv}>
-                <h1 className={styles.linearwipe}>Your Clinic.</h1>
-                <h1 className={`${styles.linearwipe} ${styles.push}`}>Your way.</h1>
+                <h1 className={styles.linearwipe}>Building Dreams.</h1>
+                <h1 className={`${styles.linearwipe} ${styles.push}`}> Brick by Brick.</h1>
                 <h2>Ashbal GC Construction Inc.</h2>
-                <h3>Walk-in & Dental Clinic Construction & Renovations</h3>
+                <h3>Commercial & Residential Construction & Renovations</h3>
                 <ThemeProvider theme={theme}><a href="tel:16477675951"><Button variant="contained">Contact Now</Button></a></ThemeProvider> 
             </div>
             <div className={`${styles.rightDiv}`}>

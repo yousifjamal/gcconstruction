@@ -10,8 +10,9 @@
 }
 .main h1 {
     display: flex;
+    text-align: left;
     padding-left: 4vw;
-    font-size: 120px;
+    font-size: 80px;
     color: White;
     text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
 }
@@ -38,7 +39,7 @@
 .main h2 {
     display: flex;
     padding-left: 4vw;
-    margin-top: 8vh;
+    margin-top: 14vh;
     font-size: 50px;
     color: rgba(255, 255, 255, 0.55);
 }
@@ -61,6 +62,9 @@
     font-weight: bold;
     font-size: 20px;
     color: white;
+}
+.leftDiv{
+    margin-top: 4vh;
 }
 
 .rightDiv{
@@ -91,22 +95,23 @@
 }
 
 .main h1{
-    margin-left: 4vw;
-    font-size: 50px;
+    text-align: center;
+    margin-left: 1vw;
+    font-size: 35px;
     text-align: center;
 }
 .main .push {
-    margin-left: 9vw;
+    margin-left: 6vw;
 }
 
 .main h2{
-    margin-left: 4vw;
+    margin-left: 2vw;
     margin-top: 7vh;
     font-size: 20px;
 }
 
 .main h3{
-    margin-left: 4vw;
+    margin-left: 0vw;
     font-size: 11px;
 }
 
@@ -117,7 +122,7 @@
 }
 
 .leftDiv {
-    margin-top: 2vh;
+    margin-top: 3vh;
     width: 80vw;
 }
 .MuiImageList-root{
