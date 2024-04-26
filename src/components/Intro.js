@@ -18,7 +18,11 @@ export default function Intro(){
     return(
         <>
         <div className={styles.main}>
-            <h1 data-aos="fade-up"> Realizing Your Vision, Building Your Story, Shaping Our Communities.</h1>
+            <div className={styles.textContainer}>
+                <h1 data-aos="fade-up"> Realizing Your Vision.</h1>
+                <h1 data-aos="fade-up"> Crafting Your Story.</h1>
+                <h1 data-aos="fade-up"> Shaping Our Communities.</h1>
+            </div>
 
             <div data-aos="fade-up" className={styles.cardcontainer}>
                 <Card className={styles.card}>
