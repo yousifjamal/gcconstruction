@@ -23,6 +23,7 @@ import 'swiper/css/navigation';
 const theme = createTheme({});
 
 export default function Projects(){
+    const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
         <>
