@@ -53,6 +53,14 @@
     text-align: center;
     background-image: radial-gradient( farthest-corner at 125% 50%, rgba(255, 255, 255, 0.01), #206ECA);
 }
+.images{
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.imageListItems {
+    margin: 0;
+}
 
 @media (max-width: 700px){
     .main{
@@ -77,5 +85,12 @@
     .card{
         margin-left: -15vw;
        width: 80vw; 
+    }
+    .images{
+        overflow: scroll;
+        scrollbar-color: white;
+        height: 50vh;
+        width: 80vw;
+        margin-right: 5vw;
     }
 }

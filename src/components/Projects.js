@@ -10,7 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { CardHeader, Typography, colors, typographyClasses } from "@mui/material";
+import { CardHeader, ImageList, ImageListItem, Typography, colors, typographyClasses } from "@mui/material";
 
 //Swiper modules 
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -26,6 +26,7 @@ export default function Projects(){
     const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
     const titleStyle = {color: 'rgba(255, 255, 255, 0.85)', variant: matchDownMd ? 'h4' : 'h2'};
     const subheadingStyle = {color: 'rgba(255, 255, 255, 0.55)', variant: matchDownMd ? 'p' : 'h4'};
+    const imageListItem = matchDownMd ? 200 : 200;
 
     return (
         <>
@@ -48,26 +49,66 @@ export default function Projects(){
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
                         <CardHeader title="Dental Lecture Room" titleTypographyProps={titleStyle} subheader="Tomken Dental" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/DentalLectureRoom2.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/EmptyDentalLectureRoom.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/DentalLectureRoomBefore.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/DentalLectureRoomBefore2.png" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
                     </Card>
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="UNDP School" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 109-19" subheaderTypographyProps={subheadingStyle}/>
+                        <CardHeader title="UNDP Police Station" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 140-19 - Iraq" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/PoliceStationAfter1.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/PoliceStationAfter2.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/PoliceStationBefore1.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/PoliceStationBefore2.png" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
+                    </Card>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperslide}>
+                    <Card className={styles.card}>
+                        <CardHeader title="UNDP New Central Market" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 319-18" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/UNDPMarket.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/UNDPMarket2.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/UNDPMarketBefore.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/UNDPMarketBefore2.png" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
                     </Card>
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
                         <CardHeader title="Residential Renovation" titleTypographyProps={titleStyle} subheader="Walk-out Basement" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/BasementRenoComplete.JPG" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/BasementRenoComplete2.JPG" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/BasementRenoBefore.JPG" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/BasementRenoBefore2.JPG" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
                     </Card>
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="UNDP Police Station" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 109-19" subheaderTypographyProps={subheadingStyle}/>
-                    </Card>
-                </SwiperSlide>
-                <SwiperSlide className={styles.swiperslide}>
-                    <Card className={styles.card}>
-                        <CardHeader title="Dental Clinic (ongoing)" titleTypographyProps={titleStyle} subheader="Sky Dental" subheaderTypographyProps={subheadingStyle}/>
+                        <CardHeader title="Dental Clinic" titleTypographyProps={titleStyle} subheader="Sky Dental (Ongoing)" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/ActiveConstructionSkyDental2.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/ActiveConstructionSkyDental.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/Sky Dental Before.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/Sky Dental Before2.png" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
                     </Card>
                 </SwiperSlide>
 
