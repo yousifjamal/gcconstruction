@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import HeroBanner from "@/components/HeroBanner";
 import Intro from "@/components/Intro";
 import Partners from "@/components/Partners";
+import Projects from "@/components/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
         <HeroBanner/>
         <Intro/>
         <Partners/>
+        <Projects/>
         <div className={styles.typewriter}><p>Remainder of Website under construction</p></div>
         <div className={styles.scrolltest}>
 
