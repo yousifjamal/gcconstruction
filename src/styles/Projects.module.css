@@ -1,19 +1,37 @@
 .main {
-    margin-top: 10vh;
+    margin-top: 25vh;
     max-width: 100vw;
     padding: 2rem 1rem;
     margin-right: 1vw;
-}
-.main h1{
-    margin-bottom: 3vh;
-    padding: 1rem 0;
-    font-size: 6.5rem;
-    text-align: center;
-    color: #206ECA;
-    text-shadow: 0 0 90px rgba(68, 0, 255, 0.663);
+    height: 100vh;
 }
 
+.subtitle{
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);;
+    background-image: radial-gradient( farthest-corner at -20% 80%, rgba(78, 77, 77, 0.158), #206ECA);
+    width: 100vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 50px;
+    color: White;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
+}
+
+.push {
+    margin-left: 2vw;
+    color: #BCDB01;
+}
+
+
+
 .swipeContainer{
+    margin-top: 10vh;
     width: 100vw;
     height: 42rem;
     padding: 2rem 0;
@@ -21,9 +39,6 @@
 }
 
 .swiperslide{
-    justify-items: center;
-    align-items: center;
-    text-align: center;
     width: 80vw;
     height: 42rem;
     position: relative;
@@ -39,7 +54,15 @@
 
 @media (max-width: 700px){
     .main{
+        margin-top: 20vh;
         padding: 0;
+    }
+    .subtitle{
+        border-radius: 0;
+        height: 11vh;
+    }
+    .push{
+        margin-left: 5vw;
     }
     .swiperslide{
         width: 100vw;

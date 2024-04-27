@@ -1,5 +1,5 @@
 .main {
-    margin-top: 20vh;
+    margin-top: 35vh;
     width: 100vw;
     height: 50vh;
     border-radius: 2rem;
@@ -15,7 +15,7 @@
     align-self: center;
     margin-top: 3vh;
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     color: White;
     text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
 }
@@ -35,6 +35,7 @@
 
 @media (max-width: 700px){
 .main{
+    margin-top: 20vh;
     border-radius: 0;
     height: 35vh;
 }

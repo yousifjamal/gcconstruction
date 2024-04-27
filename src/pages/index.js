@@ -22,8 +22,8 @@ export default function Home() {
         <Navbar/>
         <HeroBanner/>
         <Intro/>
-        <Partners/>
         <Projects/>
+        <Partners/>
         <div className={styles.typewriter}><p>Remainder of Website under construction</p></div>
         <div className={styles.scrolltest}>
 

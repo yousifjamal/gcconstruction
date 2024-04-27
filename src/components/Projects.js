@@ -27,7 +27,10 @@ export default function Projects(){
     return (
         <>
         <div className={styles.main}>
-            <h1 data-aos="fade-up">Our Projects</h1>
+            <div data-aos="fade-up" className={styles.subtitle}>   
+                <h1 data-aos="fade-up">Our</h1>
+                <h1 data-aos="fade-up" className={styles.push}>Projects</h1>
+            </div>
 
             <Swiper data-aos="fade-up" effect={'coverflow'} grabCursor={true} centeredSlides={true} loop={true} slidesPerView={'2'} loopedSlidesLimit={false}
             coverflowEffect={{rotate: 0, stretch: 0, depth: 100, modifier: 2.5}}
