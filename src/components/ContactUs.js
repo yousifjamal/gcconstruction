@@ -1,10 +1,9 @@
 import styles from "@/styles/ContactUs.module.css";
-import { createTheme,ThemeProvider, useTheme, Button} from "@mui/material";
+import { createTheme,ThemeProvider, useTheme, Button, useMediaQuery} from "@mui/material";
 
 import { FormGroup } from "@mui/material";
 import  FormControl  from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
-import outlinedInputClasses from "@mui/material/OutlinedInput";
 
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
@@ -63,6 +62,7 @@ export default function ContactUs(){
         Aos.init();
     }, []);
 
+    const matchDownMd = useMediaQuery('max-width: 700px');
     const outerTheme = useTheme();
 
     return (
@@ -75,7 +75,7 @@ export default function ContactUs(){
             </div>
 
             <Card data-aos="fade-left" className={styles.cardcontainer}>
-                <CardHeader className={styles.cardHeader} title="Contact Now" titleTypographyProps={{fontSize: '55px',color: 'white', fontWeight: 'bold', textAlign: "center"}}/>
+                <CardHeader className={styles.cardHeader} title="Contact Now" titleTypographyProps={{fontSize: matchDownMd ? '25px': '55px',color: 'white', fontWeight: 'bold', textAlign: "center"}}/>
                 <CardContent >
                     <ThemeProvider theme={customTheme(outerTheme)}>
                         <FormGroup className={styles.cardcontents}>

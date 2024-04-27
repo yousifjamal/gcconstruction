@@ -157,6 +157,7 @@
     margin-left: 5vw;
 }
 .images{
+    overflow: scroll;
     scrollbar-color: white;
     height: 33vh;
     width: 85vw;
