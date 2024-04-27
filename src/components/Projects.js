@@ -10,7 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { CardHeader, Typography } from "@mui/material";
+import { CardHeader, Typography, colors, typographyClasses } from "@mui/material";
 
 //Swiper modules 
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -24,6 +24,8 @@ const theme = createTheme({});
 
 export default function Projects(){
     const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
+    const titleStyle = {color: 'rgba(255, 255, 255, 0.85)', variant: matchDownMd ? 'h4' : 'h2'};
+    const subheadingStyle = {color: 'rgba(255, 255, 255, 0.55)', variant: matchDownMd ? 'p' : 'h4'};
 
     return (
         <>
@@ -45,27 +47,27 @@ export default function Projects(){
             className={styles.swipeContainer}>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="Dental Lecture Room" subheader="Tomken Dental"/>
+                        <CardHeader title="Dental Lecture Room" titleTypographyProps={titleStyle} subheader="Tomken Dental" subheaderTypographyProps={subheadingStyle}/>
                     </Card>
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="UNDP School" subheader="Contract No. P/AM 109-19"/>
+                        <CardHeader title="UNDP School" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 109-19" subheaderTypographyProps={subheadingStyle}/>
                     </Card>
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="Residential Renovation" subheader="Walk-out Basement"/>
+                        <CardHeader title="Residential Renovation" titleTypographyProps={titleStyle} subheader="Walk-out Basement" subheaderTypographyProps={subheadingStyle}/>
                     </Card>
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="UNDP Police Station" subheader="Contract No. P/AM 109-19"/>
+                        <CardHeader title="UNDP Police Station" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 109-19" subheaderTypographyProps={subheadingStyle}/>
                     </Card>
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="Dental Clinic (ongoing)" subheader="Sky Dental"/>
+                        <CardHeader title="Dental Clinic (ongoing)" titleTypographyProps={titleStyle} subheader="Sky Dental" subheaderTypographyProps={subheadingStyle}/>
                     </Card>
                 </SwiperSlide>
 

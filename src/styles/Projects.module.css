@@ -51,12 +51,13 @@
     width: 46vw;
     height: 42rem;
     text-align: center;
-    background-image: radial-gradient( farthest-corner at 100% 50%, rgba(255, 255, 255, 0.01), #206ECA);
+    background-image: radial-gradient( farthest-corner at 125% 50%, rgba(255, 255, 255, 0.01), #206ECA);
 }
 
 @media (max-width: 700px){
     .main{
         margin-top: 20vh;
+        border-radius: 0;
         padding: 0;
     }
     .subtitle{
