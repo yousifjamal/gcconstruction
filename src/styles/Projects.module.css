@@ -89,7 +89,7 @@
     .images{
         overflow: scroll;
         scrollbar-color: white;
-        height: 50vh;
+        height: 60vh;
         width: 80vw;
         margin-right: 5vw;
     }
