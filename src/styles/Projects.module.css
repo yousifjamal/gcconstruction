@@ -2,25 +2,25 @@
     margin-top: 25vh;
     max-width: 100vw;
     padding: 2rem 1rem;
-    margin-right: 1vw;
-    height: 100vh;
+    height: 80vh;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    background-image: radial-gradient( farthest-corner at -20% -100%, rgba(78, 77, 77, 0.158), #206ECA);
 }
 
 .subtitle{
-    border-radius: 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);;
-    background-image: radial-gradient( farthest-corner at -20% 80%, rgba(78, 77, 77, 0.158), #206ECA);
     width: 100vw;
     height: 7vw;
     display: flex;
     flex-direction: row;
     align-self: center;
     justify-content: center;
-    margin-top: 3vh;
+    margin-top: 1vh;
     text-align: center;
     font-size: 50px;
     color: White;
     text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
+    padding-right: 4vw
 }
 
 .push {
@@ -31,7 +31,7 @@
 
 
 .swipeContainer{
-    margin-top: 10vh;
+    margin-top: 2vh;
     width: 100vw;
     height: 42rem;
     padding: 2rem 0;
@@ -68,10 +68,10 @@
         width: 100vw;
     }
     .main h1 {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
     .card{
-        margin-left: -13vw;
+        margin-left: -15vw;
        width: 80vw; 
     }
 }

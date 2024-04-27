@@ -21,7 +21,7 @@ export default function HeroBanner(){
         <>
         <div className={styles.main}>
             <div className={styles.leftDiv}>
-                <h1 className={styles.linearwipe}>Building Dreams</h1>
+                <h1><span className={styles.linearwipe}>Building</span> <span className={`${styles.greenify} ${styles.linearwipegreen}`}>Dreams</span></h1>
                 <h1 className={`${styles.linearwipe} ${styles.push}`}> Brick by Brick.</h1>
                 <h2>Ashbal GC Construction Inc.</h2>
                 <h3>Commercial & Residential Construction & Renovations</h3>
