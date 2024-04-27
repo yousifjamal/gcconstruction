@@ -28,6 +28,10 @@ export default function Projects(){
     const subheadingStyle = {color: 'rgba(255, 255, 255, 0.55)', variant: matchDownMd ? 'p' : 'h4'};
     const imageListItem = matchDownMd ? 200 : 200;
 
+    useEffect(() => {
+        Aos.init();
+    }, []);
+
     return (
         <>
         <div data-aos="fade-in" className={styles.main}>
@@ -61,7 +65,7 @@ export default function Projects(){
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="UNDP Police Station" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 140-19 - Iraq" subheaderTypographyProps={subheadingStyle}/>
+                        <CardHeader title="UNDP Police Station" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 140-19" subheaderTypographyProps={subheadingStyle}/>
                         <CardMedia >
                             <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
                                 <ImageListItem><Image className={styles.imageListItems} src="/PoliceStationAfter1.png" layout="fill"/></ImageListItem>

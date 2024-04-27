@@ -1,0 +1,41 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 4rem;
+    width: 45vw;
+    height: 30vw;
+    border-radius: 3rem;
+    margin: 10rem;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);;
+}
+
+.main h1 {
+    font-size: 35px;
+}
+
+.main p {
+    font-size: 25px;
+}
+
+.signature{
+    justify-items: right;
+    text-align: right;
+}
+
+@media (max-width: 700px){
+    .main {
+        padding: 2rem;
+        margin: 6rem;
+        width: 85vw;
+        height: 60vh;
+    }
+    .main h1{
+        font-size: 30px;
+    }
+
+    .main p{
+        font-size: 14px;
+    }
+}
