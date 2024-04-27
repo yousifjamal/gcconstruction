@@ -52,7 +52,7 @@ export default function Projects(){
             className={styles.swipeContainer}>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
-                        <CardHeader title="Dental Lecture Room" titleTypographyProps={titleStyle} subheader="Tomken Dental" subheaderTypographyProps={subheadingStyle}/>
+                        <CardHeader title="Dental Lecture Room" titleTypographyProps={titleStyle} subheader="Barton Dental" subheaderTypographyProps={subheadingStyle}/>
                         <CardMedia >
                             <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
                                 <ImageListItem><Image className={styles.imageListItems} src="/DentalLectureRoom2.png" layout="fill"/></ImageListItem>
