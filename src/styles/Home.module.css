@@ -25,9 +25,6 @@
   from, to { border-color: transparent }
   50% { border-color: black; }
 }
-.scrolltest{
-  height: 200vh;
-}
 
 .main {
   display: flex;
