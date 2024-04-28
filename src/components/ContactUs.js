@@ -1,4 +1,3 @@
-'use client'
 import styles from "@/styles/ContactUs.module.css";
 import { createTheme,ThemeProvider, useTheme, Button, useMediaQuery} from "@mui/material";
 
@@ -10,11 +9,9 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 
-import { useEffect, createRef } from "react";
+import { useEffect } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css';
-
-import { Mail } from "@/pages/api/mailer";
 
 const customTheme = (outerTheme) =>
   createTheme({
@@ -70,19 +67,18 @@ export default function ContactUs(){
 
 
     //mailing functionality
-    //const [message, ]
-
     const sendMail = async (e) => {
       e.preventDefault();
-      const messageContent = {
+      const messageContent = JSON.stringify({
         name: document.getElementById('nameInput').value,
         email: document.getElementById('emailInput').value,
         phoneNumber:document.getElementById('phoneInput').value
-      };
+      });
 
       const response = await fetch("/api/mailer", {method: "POST", body: messageContent});
 
       console.log(await response.json());
+      console.log(process.env.USER);
     };
 
     return (

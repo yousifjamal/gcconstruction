@@ -1,17 +1,16 @@
-const nodemailer = require('nodemailer');
+import nodemailer from "nodemailer";
 
 
 export default async function handler(req, res){
-    const message = req.body;
+    const message = JSON.parse(req.body);
 
     const transporter = nodemailer.createTransport({
         service: "hotmail",
         auth: {
-            user: process.env.USER,
-            pass: process.env.PASS
+            user: process.env.NEXT_EMAIL,
+            pass: process.env.NEXT_PASS
         }
     })
-
     const mailOptions = {
         from: "operations@ashbalgcconstruction.ca",
         to: "operations@ashbalgcconstruction.ca",
@@ -24,12 +23,15 @@ export default async function handler(req, res){
         </ul>
         `
     }
-
-    transporter.sendMail(mailOptions, (err, info) => {
-        if (err){
-            res.status(404).json({error: `connection refused at ${info.address}`});
-        }else{
-            res.status(200).json({success: `Message delivered to ${info.accepted}`});
-        }
-    });
+    
+    if (req.method == "POST"){
+        transporter.sendMail(mailOptions, (err, info) => {
+            if (err){
+                res.status(404).json({error: `Email failed -- ${err}`});
+            }else{
+                res.status(200).json({success: `Message delivered! ${message}`});
+            }
+        });
+    }
+    
 }
