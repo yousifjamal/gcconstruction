@@ -9,7 +9,12 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
 
-import { useEffect } from "react";
+import Alert from "@mui/material/Alert";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from '@mui/icons-material/Close';
+import Collapse from '@mui/material/Collapse';
+
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
@@ -56,6 +61,8 @@ const customTheme = (outerTheme) =>
     },
 });
 
+
+
 export default function ContactUs(){
     
     useEffect(() => {
@@ -67,6 +74,8 @@ export default function ContactUs(){
 
 
     //mailing functionality
+    
+
     const sendMail = async (e) => {
       e.preventDefault();
       const messageContent = JSON.stringify({
@@ -78,11 +87,38 @@ export default function ContactUs(){
       const response = await fetch("/api/mailer", {method: "POST", body: messageContent});
 
       console.log(await response.json());
-      console.log(process.env.USER);
+      if (response.status == 200){
+        setAlert(true);
+      }
     };
+
+    //Alert function
+    const [alert, setAlert] = useState(false);
+    const alertElement = (
+    <Collapse in={alert} className={styles.alert}>
+      <Alert
+        action={
+          <IconButton
+            aria-label="close"
+            color="inherit"
+            size="small"
+            onClick={() => {
+              setAlert(false);
+            }}
+          >
+            <CloseIcon fontSize="inherit" />
+          </IconButton>
+        }
+        sx={{ mb: 2 }}
+      >
+        Email Successfully Sent!
+    </Alert>
+</Collapse>);
+
 
     return (
         <>
+        {alert ? alertElement : <></>}
         <div data-aos="fade-up" className={styles.main}>
             <div data-aos="fade-right" className={styles.leftDiv}>
                 <h1>Create Your </h1>
