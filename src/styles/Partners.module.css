@@ -1,0 +1,48 @@
+.main {
+    margin-top: 50vh;
+    width: 100vw;
+    height: 50vh;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);;
+    background-image: radial-gradient( farthest-corner at 100% 100%, rgba(255, 255, 255, 0.01), #206ECA);
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 60px;
+    color: White;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
+}
+
+.push {
+    margin-left: 2vw;
+    color: #BCDB01;
+}
+
+.CompanyLogos{
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px){
+.main{
+    margin-top: 40vh;
+    border-radius: 0;
+    height: 35vh;
+}
+.subtitle{
+    font-size: 28px;
+}
+.push {
+    margin-left: 5vw;
+}
+}

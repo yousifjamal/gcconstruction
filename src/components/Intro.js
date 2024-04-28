@@ -18,13 +18,17 @@ export default function Intro(){
     return(
         <>
         <div className={styles.main}>
-            <h1 data-aos="fade-up">Building the Future of Healthcare One Clinic at a Time</h1>
+            <div className={styles.textContainer}>
+                <h1 data-aos="fade-up"> Realizing Your Vision.</h1>
+                <h1 data-aos="fade-up"> Crafting Your Story.</h1>
+                <h1 data-aos="fade-up"> Shaping Our Communities.</h1>
+            </div>
 
             <div data-aos="fade-up" className={styles.cardcontainer}>
                 <Card className={styles.card}>
                     <CardMedia ><Image src="/SkyBlueprint.png" width={300} height={300} style={{width: '100%', height: '300px'}} /></CardMedia>
                     <CardContent>
-                        <Typography color={"rgba(255, 255, 255, 0.75)"} variant="h2">
+                        <Typography color={"rgba(255, 255, 255, 0.75)"} paddingBottom={"1rem"} variant="h2">
                             From Blueprint
                         </Typography>
                     </CardContent>
@@ -33,7 +37,7 @@ export default function Intro(){
                 <Card className={styles.card}>
                     <CardMedia><Image src="/ActiveConstructionSkyDental.png" width={300} height={300} style={{width: '100%', height: '300px'}} /></CardMedia>
                     <CardContent>
-                        <Typography color={"rgba(255, 255, 255, 0.75)"} variant="h2">
+                        <Typography color={"rgba(255, 255, 255, 0.75)"} paddingBottom={"1rem"} variant="h2">
                             To Reality
                         </Typography>
                     </CardContent>

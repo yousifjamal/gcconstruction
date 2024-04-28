@@ -1,14 +1,17 @@
 .main {
-    margin-top: 21vh;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
 }
-
+.textContainer{
+    width: 90vw;
+    text-align: center;
+}
 .main h1{
     color: #206ECA;
     text-shadow: 0 0 90px rgba(68, 0, 255, 0.663);
-    font-size: 55px;
-    margin-left: 7vw;
+    font-size: 80px;
+    margin-left: 4vw;
 }
 
 .cardcontainer{
@@ -39,17 +42,24 @@
     margin-top: 10vh;
     width: 95vw;
 }
+.textContainer{
+    width: 95vw;
+}
 .main h1 {
     text-align: center;
+    padding-top: 2vh;
     margin-left: 0;
-    font-size: 40px;
+    font-size: 28px;
 } 
 
 .cardcontainer {
     flex-direction: column;
 }
 .card {
+    align-items: center;
+    justify-content: center;
     width: 95vw;
+    height: 50vh;
 }
 .card h2{
     font-size: 40px;

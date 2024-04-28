@@ -1,0 +1,96 @@
+.main {
+    margin-top: 25vh;
+    max-width: 100vw;
+    padding: 2rem 1rem;
+    height: 80vh;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    background-image: radial-gradient( farthest-corner at -20% -100%, rgba(78, 77, 77, 0.158), #206ECA);
+}
+
+.subtitle{
+    width: 100vw;
+    height: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 50px;
+    color: White;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
+    padding-right: 4vw
+}
+
+.push {
+    margin-left: 2vw;
+    color: #BCDB01;
+}
+
+
+
+.swipeContainer{
+    margin-top: 2vh;
+    left: -1vw;
+    width: 100vw;
+    height: 42rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.swiperslide{
+    width: 80vw;
+    margin-top: 2rem;
+    height: 35rem;
+    position: relative;
+}
+.card{
+    border-radius: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    width: 46vw;
+    height: 42rem;
+    text-align: center;
+    background-image: radial-gradient( farthest-corner at 125% 50%, rgba(255, 255, 255, 0.01), #206ECA);
+}
+.images{
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.imageListItems {
+    margin: 0;
+}
+
+@media (max-width: 700px){
+    .main{
+        margin-top: 20vh;
+        border-radius: 0;
+        padding: 0;
+    }
+    .subtitle{
+        border-radius: 0;
+        height: 11vh;
+    }
+    .push{
+        margin-left: 5vw;
+    }
+    .swiperslide{
+        width: 100vw;
+        
+    }
+    .main h1 {
+        font-size: 3.5rem;
+    }
+    .card{
+        margin-left: -15vw;
+       width: 80vw; 
+    }
+    .images{
+        overflow: scroll;
+        scrollbar-color: white;
+        height: 60vh;
+        width: 80vw;
+        margin-right: 5vw;
+    }
+}

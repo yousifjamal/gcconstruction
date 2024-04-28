@@ -25,12 +25,10 @@
   from, to { border-color: transparent }
   50% { border-color: black; }
 }
-.scrolltest{
-  height: 200vh;
-}
 
 .main {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;

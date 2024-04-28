@@ -1,0 +1,103 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+    height: 70vh;
+    background-image: radial-gradient( farthest-side at 100% 30%, rgba(255, 255, 255, 0.01), #206ECA);
+    border-radius: 2rem;
+    border: grey;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+}
+
+.leftDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.leftDiv h1 {
+    
+    display: flex;
+    text-align: left;
+    padding-left: 4vw;
+    font-size: 80px;
+    color: White;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
+}
+
+.greenify {
+    color: #BCDB01;
+}
+
+.leftDiv h2 {
+    
+    display: flex;
+    padding-left: 4vw;
+    margin-top: 5vh;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.cardcontainer {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-left: 10vw;
+    width: 25vw;
+    height: 28vw;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: #4174AF;
+}
+
+.cardcontents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    width: 20vw;
+    height: 35vh;
+}
+.cardcontainer Button{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 2rem;
+    color: #4174AF;
+}
+
+@media (max-width: 700px){
+    .main{
+        flex-direction: column;
+        height: 110vh;
+        width: 100vw;
+        padding: 2rem;
+        border-radius: 0;
+    }
+    .leftDiv{
+        align-items: center;
+        padding-top: 2rem;
+        width: 85vw;
+    }
+    
+
+    .leftDiv h1 {
+        font-size: 38px;
+    }
+    .leftDiv h2 {
+        padding: 0;
+        text-align: center;
+        font-size: 20px;
+    }
+    .cardcontainer{
+        margin-left: 0;
+        margin-top: 5vh;
+        padding: 0;
+        width: 85vw;
+        height: 65vh;
+    }
+    .cardcontents{
+        width: 65vw;
+        height: 35vh;
+    }
+    
+}
+

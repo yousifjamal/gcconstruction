@@ -1,0 +1,24 @@
+.main{
+    width: 34vw;
+    height: 5vh;
+    justify-content: space-between;
+    color: #206ECA;
+    justify-content: space-between;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px){
+    .main{
+        width: 85vw;
+        height: 0vh;
+        padding: 0;
+        padding-top: 2rem;
+        
+    }
+    .main h1{
+        padding: 0;
+        font-size: 20px;
+    }
+}

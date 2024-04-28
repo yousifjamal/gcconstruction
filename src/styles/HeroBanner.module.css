@@ -10,11 +10,33 @@
 }
 .main h1 {
     display: flex;
+    text-align: left;
     padding-left: 4vw;
-    font-size: 120px;
+    font-size: 80px;
     color: White;
     text-shadow: 0 0 25px rgba(255, 255, 255, 0.463);
 }
+
+.greenify{
+    padding-left: 1vw;
+    color: #BCDB01;
+}
+
+.linearwipegreen {
+    text-align: center;
+    background: linear-gradient(to right, #BCDB01 20%, rgb(190, 228, 132) 40%, rgb(196, 241, 128) 60%, #BCDB01 80%);;
+    background-size: 200% auto;
+    
+    color: #000;
+    background-clip: text;
+    fill: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 3s linear infinite;
+    
+  }
+
 .linearwipe {
     text-align: center;
     background: linear-gradient(to right, #c9c9c9 20%, rgb(228, 227, 227) 40%, rgb(255, 255, 255) 60%, #c9c9c9 80%);;
@@ -38,7 +60,7 @@
 .main h2 {
     display: flex;
     padding-left: 4vw;
-    margin-top: 8vh;
+    margin-top: 14vh;
     font-size: 50px;
     color: rgba(255, 255, 255, 0.55);
 }
@@ -62,6 +84,9 @@
     font-size: 20px;
     color: white;
 }
+.leftDiv{
+    margin-top: 4vh;
+}
 
 .rightDiv{
     margin-top: 3vh;
@@ -69,7 +94,6 @@
 }
 
 .images{
-    
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -90,23 +114,28 @@
     height: 80vh;
 }
 
+.greenify{
+    padding-left: 2vw;
+}
+
 .main h1{
-    margin-left: 4vw;
-    font-size: 50px;
+    text-align: center;
+    margin-left: 1vw;
+    font-size: 35px;
     text-align: center;
 }
 .main .push {
-    margin-left: 9vw;
+    margin-left: 6vw;
 }
 
 .main h2{
-    margin-left: 4vw;
+    margin-left: 2vw;
     margin-top: 7vh;
     font-size: 20px;
 }
 
 .main h3{
-    margin-left: 4vw;
+    margin-left: 0vw;
     font-size: 11px;
 }
 
@@ -117,7 +146,7 @@
 }
 
 .leftDiv {
-    margin-top: 2vh;
+    margin-top: 3vh;
     width: 80vw;
 }
 .MuiImageList-root{
