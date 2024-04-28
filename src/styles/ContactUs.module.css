@@ -57,6 +57,12 @@
     width: 20vw;
     height: 30vh;
 }
+.cardcontainer Button{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 2rem;
+    color: #4174AF;
+}
 
 @media (max-width: 700px){
     .main{
@@ -67,11 +73,13 @@
         border-radius: 0;
     }
     .leftDiv{
+        align-items: center;
         padding-top: 2rem;
         width: 85vw;
     }
+    
+
     .leftDiv h1 {
-        padding-left: 2rem;
         font-size: 38px;
     }
     .leftDiv h2 {
@@ -84,10 +92,12 @@
         margin-top: 5vh;
         padding: 0;
         width: 85vw;
-        height: 70vh;
+        height: 65vh;
     }
     .cardcontents{
-        width: 70vw;
+        width: 65vw;
+        height: 40vh;
     }
+    
 }
 
