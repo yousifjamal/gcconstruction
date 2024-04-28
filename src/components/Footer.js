@@ -18,16 +18,9 @@ export default function Footer(){
     return (
         <>
         <div className={styles.main}>
-            <div className={styles.copy} data-aos="fade-right">
                 <h1>Ashbal GC Construction Inc. </h1>
-                <CopyrightIcon fontSize={ smallsize ? "12" : "large"} />
+                <CopyrightIcon fontSize={ smallsize ? "medium" : "large"} />
                 <h1>2024</h1>
-            </div>
-            
-            <div className={styles.copy} data-aos='fade-left'>
-                <Image src="./blue-phone-7152.svg" width={ smallsize ? 20 : 40} height={ smallsize ? 20 : 40} title="Contact Now" alt="phone icon" className={styles.symbol}/>
-                <h1><a href="tel:16477675951">(647) 767 - 5951</a></h1>
-            </div>
         </div>
         </>
     );
