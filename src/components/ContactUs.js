@@ -13,7 +13,6 @@ import { useEffect } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
-
 const customTheme = (outerTheme) =>
   createTheme({
     palette: {
@@ -58,12 +57,29 @@ const customTheme = (outerTheme) =>
 });
 
 export default function ContactUs(){
+    
     useEffect(() => {
         Aos.init();
     }, []);
 
     const matchDownMd = useMediaQuery('max-width: 700px');
     const outerTheme = useTheme();
+
+
+    //mailing functionality
+    const sendMail = async (e) => {
+      e.preventDefault();
+      const messageContent = JSON.stringify({
+        name: document.getElementById('nameInput').value,
+        email: document.getElementById('emailInput').value,
+        phoneNumber:document.getElementById('phoneInput').value
+      });
+
+      const response = await fetch("/api/mailer", {method: "POST", body: messageContent});
+
+      console.log(await response.json());
+      console.log(process.env.USER);
+    };
 
     return (
         <>
@@ -88,7 +104,7 @@ export default function ContactUs(){
                             <FormControl>
                                 <TextField id='phoneInput' label="Phone Number"/>
                             </FormControl>
-                            <Button variant="contained">Send Email</Button>
+                            <Button onClick={sendMail} variant="contained">Send Email</Button>
                         </FormGroup>
                     </ ThemeProvider>
                 </CardContent>
