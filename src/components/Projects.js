@@ -34,7 +34,7 @@ export default function Projects(){
 
     return (
         <>
-        <div data-aos="fade-in" className={styles.main}>
+        <div data-aos="fade-in" className={styles.main}  id="projects-section">
             <div data-aos="fade-up" className={styles.subtitle}>   
                 <h1 data-aos="fade-up">Our</h1>
                 <h1 data-aos="fade-up" className={styles.push}>Projects</h1>

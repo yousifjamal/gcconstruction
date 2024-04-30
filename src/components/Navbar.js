@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import styles from "@/styles/Navbar.module.css";
 import {useEffect, useState} from "react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,9 +30,9 @@ export default function Navbar() {
         
 
         <ul>
-            <li><a>Home</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="#projects-section">Projects</Link></li>
+            <li><Link href="#contact-section">Contact</Link></li>
         </ul>
 
         <div className={styles.phone} >
