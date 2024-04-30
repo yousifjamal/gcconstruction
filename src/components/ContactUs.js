@@ -119,7 +119,7 @@ export default function ContactUs(){
     return (
         <>
         {alert ? alertElement : <></>}
-        <div data-aos="fade-up" className={styles.main}>
+        <div data-aos="fade-up" className={styles.main} id="contact-section">
             <div data-aos="fade-right" className={styles.leftDiv}>
                 <h1>Create Your </h1>
                 <h1 ><span className={styles.greenify}>Special Space.</span></h1>
