@@ -65,6 +65,19 @@ export default function Projects(){
                 </SwiperSlide>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
+                        <CardHeader title="UNDP School" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 109-19" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/SchoolAfter.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/SchoolAfter2.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/SchoolBefore.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/SchoolBefore2.jpg" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
+                    </Card>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperslide}>
+                    <Card className={styles.card}>
                         <CardHeader title="UNDP Police Station" titleTypographyProps={titleStyle} subheader="Contract No. P/AM 140-19" subheaderTypographyProps={subheadingStyle}/>
                         <CardMedia >
                             <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>

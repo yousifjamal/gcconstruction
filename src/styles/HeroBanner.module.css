@@ -1,9 +1,12 @@
 .main {
     display: flex;
     justify-content: flex-start;
+    position: relative;
     width: 98vw;
     height: 70vh;
-    background-image: radial-gradient( farthest-side at 0% 100%, rgba(255, 255, 255, 0.01), #206ECA);
+    /*background-image: radial-gradient( farthest-side at 0% 100%, rgba(255, 255, 255, 0.01), #206ECA);
+    background-image: url('/');
+    background-size: 100%;*/
     border-radius: 2rem;
     border: grey;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -62,7 +65,7 @@
     padding-left: 4vw;
     margin-top: 14vh;
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .main h3 {
@@ -70,7 +73,7 @@
     padding-left: 4vw;
     padding-top: 2vh;
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .main Button{
@@ -112,6 +115,7 @@
     align-items: center;
     width: 95vw;
     height: 80vh;
+    background-size: 160% 100%;
 }
 
 .greenify{
