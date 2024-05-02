@@ -31,8 +31,8 @@ export default function HeroBanner(){
                 <div>
                     <ImageList className={styles.images} sx={{width: 850, height: 600}} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={300}>
                         <ImageListItem ><Image className={styles.imageListItems} src="/DentalLectureRoom.png" layout="fill"/></ImageListItem>
-                        <ImageListItem ><Image className={styles.imageListItems} src="/EmptyDentalLectureRoom.png" layout="fill"/></ImageListItem>
-                        <ImageListItem cols={matchDownMd ? 1 : 2}><Image className={styles.imageListItems} src="/DentalLectureRoomBefore.png" layout="fill"/></ImageListItem>
+                        <ImageListItem ><Image className={styles.imageListItems} src="/PoliceStationAfter2.png" layout="fill"/></ImageListItem>
+                        <ImageListItem cols={matchDownMd ? 1 : 2}><Image className={styles.imageListItems} src="/BasementRenoComplete.JPG" layout="fill"/></ImageListItem>
                     </ImageList>
                     
                 </div>

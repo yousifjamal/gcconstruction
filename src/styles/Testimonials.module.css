@@ -2,41 +2,53 @@
     color: black;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    
+}
+.card{
     justify-content: left;
     padding: 4rem;
     width: 45vw;
     height: 30vw;
     border-radius: 3rem;
-    margin: 10rem;
+    margin: 6rem;
     background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.main h1 {
+.card h1 {
     font-size: 35px;
 }
 
-.main p {
-    font-size: 25px;
+.card p {
+    font-size: 18px;
 }
 
 .signature{
+    position: absolute;
     justify-items: right;
+    bottom: 0;
+    right: 0;
+    padding: 3.5rem;
     text-align: right;
 }
 
 @media (max-width: 700px){
-    .main {
+    .card{
         padding: 2rem;
         margin: 6rem;
         width: 85vw;
         height: 65vh;
     }
-    .main h1{
+    .card h1{
         font-size: 30px;
     }
 
-    .main p{
-        font-size: 14px;
+    .card p{
+        font-size: 12px;
+    }
+    .signature{
+        font-size: 8px;
     }
 }
