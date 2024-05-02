@@ -19,7 +19,7 @@ export default function Testimonials(){
         <div className={styles.main}>
             <div data-aos="fade-down" className={styles.card}>
                 <div>
-                    <h1>"On Time and to a High Standard"</h1>
+                    <h1>&ldquo; On Time and to a High Standard &rdquo;</h1>
                     <br/>
                     <Rating size="large" name="read-only" value={5}/>
                 </div>
@@ -37,7 +37,7 @@ export default function Testimonials(){
             </div>
             <div data-aos="fade-down" className={styles.card}>
                 <div>
-                    <h1>"The IDEAL for building renovations!"</h1>
+                    <h1>&ldquo;The IDEAL for building renovations!&rdquo;</h1>
                     <br/>
                     <Rating size="large" name="read-only" value={5}/>
                 </div>
