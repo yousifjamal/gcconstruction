@@ -3,6 +3,8 @@ import { Button, ImageList, ImageListItem } from "@mui/material"
 import {createTheme, ThemeProvider} from "@mui/material/styles"
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Image from "next/image";
+import backgroundImage from "/public/CameronCrane.JPG";
+import backgroundImage2 from "/public/UNDPMarket2.png";
 
 
 const theme = createTheme({
@@ -19,7 +21,7 @@ export default function HeroBanner(){
     const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
     return(
         <>
-        <div className={styles.main}>
+        <div className={styles.main} style={{backgroundImage: matchDownMd ? `url(${backgroundImage2.src})` : `url(${backgroundImage.src})`}}>
             <div className={styles.leftDiv}>
                 <h1><span className={styles.linearwipe}>Building</span> <span className={`${styles.greenify} ${styles.linearwipegreen}`}>Dreams</span></h1>
                 <h1 className={`${styles.linearwipe} ${styles.push}`}> Brick by Brick.</h1>
@@ -38,6 +40,7 @@ export default function HeroBanner(){
                 </div>
                 
             </div>
+            
         </div>
         </>
     )
