@@ -20,6 +20,8 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
+import backgroundImage from "/public/Trucks.JPG"
+
 const theme = createTheme({});
 
 export default function Projects(){
@@ -34,7 +36,7 @@ export default function Projects(){
 
     return (
         <>
-        <div data-aos="fade-in" className={styles.main}  id="projects-section">
+        <div data-aos="fade-in" className={styles.main}  id="projects-section" style={{backgroundImage: `url(${backgroundImage.src})`}}>
             <div data-aos="fade-up" className={styles.subtitle}>   
                 <h1 data-aos="fade-up">Our</h1>
                 <h1 data-aos="fade-up" className={styles.push}>Projects</h1>
