@@ -4,7 +4,7 @@
     width: 98vw;
     height: 70vh;
     /*background-image: radial-gradient( farthest-side at 0% 100%, rgba(255, 255, 255, 0.01), #206ECA);*/
-    background-image: url("/CameronCrane.jpg");
+    background-image: url('/CameronCrane.jpg');
     background-size: 100%;
     border-radius: 2rem;
     border: grey;
@@ -114,7 +114,7 @@
     align-items: center;
     width: 95vw;
     height: 80vh;
-    background-image: url("/NicePoliceStationOutside.png");
+    background-image: url('/NicePoliceStationOutside.png');
     background-size: 100% 100%;
 }
 
