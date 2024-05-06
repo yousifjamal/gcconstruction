@@ -4,7 +4,7 @@ import {createTheme, ThemeProvider} from "@mui/material/styles"
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Image from "next/image";
 import backgroundImage from "/public/CameronCrane.JPG";
-import backgroundImage2 from "/public/UNDPMarket2.png";
+import backgroundImage2 from "/public/CameronCrane2.JPG";
 
 
 const theme = createTheme({
