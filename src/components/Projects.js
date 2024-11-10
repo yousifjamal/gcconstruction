@@ -54,6 +54,32 @@ export default function Projects(){
             className={styles.swipeContainer}>
                 <SwiperSlide className={styles.swiperslide}>
                     <Card className={styles.card}>
+                        <CardHeader title="Dental Clinic" titleTypographyProps={titleStyle} subheader="Sky Dental" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/skydental_complete.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/skydental_complete2.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/ActiveConstructionSkyDental2.png" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/ActiveConstructionSkyDental.png" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
+                    </Card>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperslide}>
+                    <Card className={styles.card}>
+                        <CardHeader title="Dental Clinic" titleTypographyProps={titleStyle} subheader="Redwood Dental" subheaderTypographyProps={subheadingStyle}/>
+                        <CardMedia >
+                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
+                                <ImageListItem><Image className={styles.imageListItems} src="/redwood_complete.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/redwood_complete2.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/redwood_complete3.jpg" layout="fill"/></ImageListItem>
+                                <ImageListItem><Image className={styles.imageListItems} src="/redwood_complete4.jpg" layout="fill"/></ImageListItem>
+                            </ImageList>
+                        </CardMedia>
+                    </Card>
+                </SwiperSlide>
+                <SwiperSlide className={styles.swiperslide}>
+                    <Card className={styles.card}>
                         <CardHeader title="Dental Lecture Room" titleTypographyProps={titleStyle} subheader="Barton Dental" subheaderTypographyProps={subheadingStyle}/>
                         <CardMedia >
                             <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
@@ -113,19 +139,6 @@ export default function Projects(){
                                 <ImageListItem><Image className={styles.imageListItems} src="/BasementRenoComplete2.JPG" layout="fill"/></ImageListItem>
                                 <ImageListItem><Image className={styles.imageListItems} src="/BasementRenoBefore.JPG" layout="fill"/></ImageListItem>
                                 <ImageListItem><Image className={styles.imageListItems} src="/BasementRenoBefore2.JPG" layout="fill"/></ImageListItem>
-                            </ImageList>
-                        </CardMedia>
-                    </Card>
-                </SwiperSlide>
-                <SwiperSlide className={styles.swiperslide}>
-                    <Card className={styles.card}>
-                        <CardHeader title="Dental Clinic" titleTypographyProps={titleStyle} subheader="Sky Dental (Ongoing)" subheaderTypographyProps={subheadingStyle}/>
-                        <CardMedia >
-                            <ImageList sx={{width: '100%', height: '100%', padding: '10px'}} className={styles.images} variant="quilted" cols={matchDownMd? 1 : 2} rowHeight={imageListItem}>
-                                <ImageListItem><Image className={styles.imageListItems} src="/ActiveConstructionSkyDental2.png" layout="fill"/></ImageListItem>
-                                <ImageListItem><Image className={styles.imageListItems} src="/ActiveConstructionSkyDental.png" layout="fill"/></ImageListItem>
-                                <ImageListItem><Image className={styles.imageListItems} src="/Sky Dental Before.png" layout="fill"/></ImageListItem>
-                                <ImageListItem><Image className={styles.imageListItems} src="/Sky Dental Before2.png" layout="fill"/></ImageListItem>
                             </ImageList>
                         </CardMedia>
                     </Card>
